@@ -6,21 +6,32 @@ package dog;
 //You should update the toString and the format should be: “[name] is a [breed]”
 //For example:
 //
-//Bluey is a Australian Cattle Dog
+//Bluey is an Australian Cattle Dog
 //Test out your Dog class and the new toString method in DogTester.java
+
+
+
+
+import javax.xml.namespace.QName;
 
 
 public class Dog {
     private String breed;
     // Add an instance variable here for name.
+    private String name;  //instance variable represents dogs name
 
-    public Dog(String theBreed)
+
+
+
+    public Dog(String theBreed, String theName)
     {
-        breed = theBreed;
+        breed = theBreed;  //assigning theBreed parameter to an instance variable
+        name = theName;  //assigning theName parameter to an instance variable
     }
+
 
     public String toString()
     {
-        return breed;
+        return name + " is an " + breed;
     }
 }
