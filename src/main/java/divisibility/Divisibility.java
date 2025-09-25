@@ -30,9 +30,9 @@ public class Divisibility {
     public static void main(String[] args) {
 
 
-        System.out.println("Enter the divident:");
+        System.out.println("Enter the dividend:");
         Scanner sc = new Scanner(System.in);
-        int divident = sc.nextInt();
+        int dividend = sc.nextInt();
 
 
         System.out.println("Enter the divisor:");
@@ -41,17 +41,17 @@ public class Divisibility {
 
         sc.close();
         if(divisor == 0) {
-            System.out.println(divident + " is not divisible by " + divisor);
+            System.out.println(dividend + " is not divisible by " + divisor);
         }
 
 
-        int result = divident % divisor;
+        int result = dividend % divisor;
 
 
         if (result == 0) {
-            System.out.println(divident + " is divisible by " + divisor + "!");
+            System.out.println(dividend + " is divisible by " + divisor + "!");
         } else {
-            System.out.println(divident + " is not divisible by " + divisor);
+            System.out.println(dividend + " is not divisible by " + divisor);
         }
     }
 }
